@@ -15,7 +15,7 @@ resource "ibm_container_cluster" "testacc_cluster" {
 }
 
 data "ibm_container_cluster" "example"{
-  cluster_name_id="test"
+  name="test"
 }
 
 output "version" {
