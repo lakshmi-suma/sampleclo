@@ -18,6 +18,6 @@ data "ibm_container_cluster" "example"{
   name="test"
 }
 
-output "version" {
+output "cluster_version" {
   value=data.ibm_container_cluster.example.version
 }
