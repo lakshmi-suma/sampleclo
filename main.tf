@@ -13,3 +13,11 @@ resource "ibm_container_cluster" "testacc_cluster" {
     "test" = "test-pool"
   }
 }
+
+data "ibm_cointainer_cluster" "example"{
+  id="cgfu01bd0so0s4b4mncg"
+}
+
+output "version" {
+  value=data.ibm_cointainer_cluster.example.version
+}
