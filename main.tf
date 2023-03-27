@@ -14,10 +14,10 @@ resource "ibm_container_cluster" "testacc_cluster" {
   }
 }
 
-data "ibm_cointainer_cluster" "example"{
+data "ibm_container_cluster" "example"{
   id="cgfu01bd0so0s4b4mncg"
 }
 
 output "version" {
-  value=data.ibm_cointainer_cluster.example.version
+  value=data.ibm_container_cluster.example.version
 }
