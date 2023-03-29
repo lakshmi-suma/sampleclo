@@ -14,7 +14,7 @@ resource "ibm_container_cluster" "testacc_cluster" {
   }
 }
 
-# data "ibm_container_cluster" "example"{
-#   name="test"
-# }
+data "ibm_container_cluster" "example"{
+  name="test"
+}
 
